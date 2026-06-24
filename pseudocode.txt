@@ -1,0 +1,25 @@
+Its concentration memory game, the game contains cards and only every 2 cards matches,
+for the player to wins the game, all the cards that matches show be found. attemps will
+be set at 5 and reset if the player failed.
+
+create pairs of cards
+shuffle cards randomly
+display all cards flipped 
+set attemps = 5 or 10
+button to get the game started
+button to reset the game 
+all cards are empty
+user clicks first card > flip & show value 
+user click second card > compare with first card
+match > keeps cards visible & check if all pairs are match > show msg
+check win > show win message
+check lose > if attemps = 0, show lose message > reset
+
+
+
+- as a user i want to see the a theme for the game
+- i want to a button or msg that lets me start playing 
+- i want to be able to get more than one attemp to find the right card
+- i want a msg that declares that ive won the game or not
+- i want to reset the game and play it again 
+
