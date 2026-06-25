@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color: rgb(25, 25, 24);
+    font-family: "Righteous", sans-serif;
+}
+
+h1{
+    color: rgb(244, 240, 235);
+    
+}
+
+.cardboard {
+    display: flex;
+    flex-wrap:  wrap;
+    width: 325px;
+    gap: 10px;
+  
+    
+}
+
+.card {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: 2px solid rgb(244, 240, 235);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(244, 240, 235);
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 225px;
+    margin: 30px;
+    border: 2px solid rgb(244, 240, 235);
+    border-radius: 10px;
+    
+}
+
+.btn {
+    font-family: "Righteous", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
