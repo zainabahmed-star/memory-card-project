@@ -6,9 +6,11 @@ const emojisMix = [...emojis, ...emojis]
 // const player = ''
 let firstCard = ''
 let secCard = ''
+let attempts = 10
 /*------------------------ Cached Element References ------------------------*/
 const cardBoard = document.querySelector('.cardboard')
 const carD = document.querySelectorAll('.card')
+const attemptsButton = document.querySelector('#attempts')
 /*----------------------------- Event Listeners -----------------------------*/
 //mix cards
 emojisMix.sort(() => Math.random() - 0.5);
@@ -56,7 +58,9 @@ cardBoard.addEventListener('click', function(event){
         secCard = '' 
         }, 1000)
         
-
+        // attempts descrase by 1 each time cards dont match
+        attempts -= 1
+        attemptsButton.textContent = `Attempts: ${attempts}`
         //////Get BaCK to with later!!!!/////////
         //👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼
         
