@@ -38,11 +38,16 @@ cardBoard.addEventListener('click', function(event){
           console.log('match!')
           // if yes they match - yayy
           // cards stay
+
+        firstCard = ''
+        secCard = '' 
     } else {
         // if not they dont match.... 
         console.log('dont match')
 
         //hide emojis from screen 
+        // this function keep the emoji in screen for 1 sec before
+        // disappearing again
         setTimeout(() => {
         firstCard.textContent = ''
         secCard.textContent = ''
@@ -53,12 +58,9 @@ cardBoard.addEventListener('click', function(event){
         
 
         //////Get BaCK to with later!!!!/////////
-        //👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼
-        // now it works but there is 
-        //a new issue: when two cards match, they stay
-        // on screen, but when i continue playing, 
-        // and i click on the third card, the first card 
-        //disappear and the two and third stay
+        //👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼
+        
+        
         
         
     }
