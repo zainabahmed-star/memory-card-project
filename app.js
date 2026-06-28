@@ -11,6 +11,7 @@ let attempts = 10
 const cardBoard = document.querySelector('.cardboard')
 const carD = document.querySelectorAll('.card')
 const attemptsButton = document.querySelector('#attempts')
+const message = document.querySelector('#message')
 /*----------------------------- Event Listeners -----------------------------*/
 //mix cards
 emojisMix.sort(() => Math.random() - 0.5);
@@ -61,13 +62,11 @@ cardBoard.addEventListener('click', function(event){
         // attempts descrase by 1 each time cards dont match
         attempts -= 1
         attemptsButton.textContent = `Attempts: ${attempts}`
-        //////Get BaCK to with later!!!!/////////
-        //👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼
         
         
-        
-        
-    }
+        if (attempts === 0){
+            message.textContent = `Game Over`
+        } }
 
      }
    

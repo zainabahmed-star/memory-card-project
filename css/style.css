@@ -36,8 +36,8 @@ h1{
 
 .buttons {
     display: flex;
-    gap: 73px;
-    margin: 30px;
+    gap: 67px;
+    margin-top: 30px;
     border: 2px solid rgb(244, 240, 235);
     border-radius: 10px;
     
@@ -47,4 +47,10 @@ h1{
     font-family: "Righteous", sans-serif;
     border-radius: 10px;
     cursor: pointer;
+}
+
+#message {
+    color: rgb(244, 240, 235);
+    margin-top: 30px;
+    
 }
