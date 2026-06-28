@@ -7,6 +7,7 @@ const emojisMix = [...emojis, ...emojis]
 let firstCard = ''
 let secCard = ''
 let attempts = 10
+let matchedCards = 0
 /*------------------------ Cached Element References ------------------------*/
 const cardBoard = document.querySelector('.cardboard')
 const carD = document.querySelectorAll('.card')
@@ -44,6 +45,12 @@ cardBoard.addEventListener('click', function(event){
 
         firstCard = ''
         secCard = '' 
+        
+        matchedCards += 1
+        if (matchedCards === 6){
+            message.textContent = 'You Won'
+        }
+        
     } else {
         // if not they dont match.... 
         console.log('dont match')
