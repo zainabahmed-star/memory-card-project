@@ -21,7 +21,6 @@ emojisMix.sort(() => Math.random() - 0.5);
 //took this online
 
 
-
 cardBoard.addEventListener('click', function(event){
     const clickedOn = event.target;
 
@@ -33,9 +32,12 @@ cardBoard.addEventListener('click', function(event){
         //store both cards in clickedon 
         if (firstCard === ''){
         firstCard = clickedOn
+        
     } else {
         // store second clicked card
         secCard = clickedOn
+        
+
     
 //compare two cards 
 // check if both first card content (emoji) matches the second 
@@ -73,12 +75,21 @@ cardBoard.addEventListener('click', function(event){
         attempts -= 1
         attemptsButton.textContent = `Attempts: ${attempts}`
         
-        
+        setTimeout(() => {
+            
+        })
         if (attempts === 0){
             message.textContent = `Game Over`
+            setTimeout(() => {
+            resetfunc()
+        }, 2000)
+            
+            
             
             // i need to reset the game here
-        } }
+        } 
+    
+    }
 
      }
    
@@ -86,8 +97,23 @@ cardBoard.addEventListener('click', function(event){
 
 })
 //reset the whole game 
-    reset.addEventListener('click', function(){
-      firstCard = ''
+//     reset.addEventListener('click', function(){
+//       firstCard = ''
+//       secCard = ''
+//       matchedCards = 0
+//       attempts = 10
+//       carD.forEach(card => {
+//         card.textContent =''
+//       })
+//       message.textContent = ''
+//       attemptsButton.textContent = `Attempts: ${attempts}`
+//       emojisMix.sort(() => Math.random() - 0.5);
+//       foundButton.textContent = `Found: ${matchedCards}`
+// })
+
+
+function resetfunc(){
+     firstCard = ''
       secCard = ''
       matchedCards = 0
       attempts = 10
@@ -98,7 +124,7 @@ cardBoard.addEventListener('click', function(event){
       attemptsButton.textContent = `Attempts: ${attempts}`
       emojisMix.sort(() => Math.random() - 0.5);
       foundButton.textContent = `Found: ${matchedCards}`
-})
+}
 
 //found cards count
 
