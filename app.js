@@ -29,7 +29,7 @@ cardBoard.addEventListener('click', function(event){
     if (clickedOn.classList.contains('card')) {
         // so show the emoji on the clicked card 
         clickedOn.textContent = emojisMix[clickedOn.id];
-
+        
         //store both cards in clickedon 
         if (firstCard === ''){
         firstCard = clickedOn
@@ -52,7 +52,7 @@ cardBoard.addEventListener('click', function(event){
         if (matchedCards === 6){
             message.textContent = 'You Won'
         }
-        
+        foundButton.textContent = `Found: ${matchedCards}`
         
     } else {
         // if not they dont match.... 
@@ -76,6 +76,7 @@ cardBoard.addEventListener('click', function(event){
         
         if (attempts === 0){
             message.textContent = `Game Over`
+            
             // i need to reset the game here
         } }
 
@@ -96,9 +97,8 @@ cardBoard.addEventListener('click', function(event){
       message.textContent = ''
       attemptsButton.textContent = `Attempts: ${attempts}`
       emojisMix.sort(() => Math.random() - 0.5);
-      
+      foundButton.textContent = `Found: ${matchedCards}`
 })
-
 
 //found cards count
 

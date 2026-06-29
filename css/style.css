@@ -20,8 +20,7 @@ h1{
     flex-wrap:  wrap;
     width: 325px;
     gap: 10px;
-  
-    
+   
 }
 
 .card {
@@ -32,6 +31,7 @@ h1{
     text-align: center;
     background-color: rgb(244, 240, 235);
     cursor: pointer;
+    
 }
 
 .buttons {
