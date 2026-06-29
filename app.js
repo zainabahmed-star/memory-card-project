@@ -13,6 +13,8 @@ const cardBoard = document.querySelector('.cardboard')
 const carD = document.querySelectorAll('.card')
 const attemptsButton = document.querySelector('#attempts')
 const message = document.querySelector('#message')
+const reset = document.querySelector('#reset')
+const foundButton = document.querySelector('#found')
 /*----------------------------- Event Listeners -----------------------------*/
 //mix cards
 emojisMix.sort(() => Math.random() - 0.5);
@@ -51,6 +53,7 @@ cardBoard.addEventListener('click', function(event){
             message.textContent = 'You Won'
         }
         
+        
     } else {
         // if not they dont match.... 
         console.log('dont match')
@@ -73,6 +76,7 @@ cardBoard.addEventListener('click', function(event){
         
         if (attempts === 0){
             message.textContent = `Game Over`
+            // i need to reset the game here
         } }
 
      }
@@ -80,5 +84,29 @@ cardBoard.addEventListener('click', function(event){
     }
 
 })
+//reset the whole game 
+    reset.addEventListener('click', function(){
+      firstCard = ''
+      secCard = ''
+      matchedCards = 0
+      attempts = 10
+      carD.forEach(card => {
+        card.textContent =''
+      })
+      message.textContent = ''
+      attemptsButton.textContent = `Attempts: ${attempts}`
+      emojisMix.sort(() => Math.random() - 0.5);
+      
+})
+
+
+//found cards count
+
+// found.addEventListener('click', function(){
+    
+//     matchedCards.textContent = `Found: ${matchedCards}`
+// })
+
+
 
 /*-------------------------------- Functions --------------------------------*/
