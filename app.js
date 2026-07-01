@@ -75,18 +75,14 @@ cardBoard.addEventListener('click', function(event){
         attempts -= 1
         attemptsButton.textContent = `Attempts: ${attempts}`
         
-        setTimeout(() => {
+        // setTimeout(() => {
             
-        })
+        // })
         if (attempts === 0){
             message.textContent = `Game Over`
             setTimeout(() => {
             resetfunc()
-        }, 2000)
-            
-            
-            
-            // i need to reset the game here
+        }, 3000)
         } 
     
     }
@@ -97,20 +93,25 @@ cardBoard.addEventListener('click', function(event){
 
 })
 //reset the whole game 
-//     reset.addEventListener('click', function(){
-//       firstCard = ''
-//       secCard = ''
-//       matchedCards = 0
-//       attempts = 10
-//       carD.forEach(card => {
-//         card.textContent =''
-//       })
-//       message.textContent = ''
-//       attemptsButton.textContent = `Attempts: ${attempts}`
-//       emojisMix.sort(() => Math.random() - 0.5);
-//       foundButton.textContent = `Found: ${matchedCards}`
-// })
+    reset.addEventListener('click', resetfunc)
+    //   firstCard = ''
+    //   secCard = ''
+    //   matchedCards = 0
+    //   attempts = 10
+    //   carD.forEach(card => {
+    //     card.textContent =''
+    //   })
+    //   message.textContent = ''
+    //   attemptsButton.textContent = `Attempts: ${attempts}`
+    //   emojisMix.sort(() => Math.random() - 0.5);
+    //   foundButton.textContent = `Found: ${matchedCards}`
 
+
+
+// get back to this 👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼
+
+
+/*-------------------------------- Functions --------------------------------*/
 
 function resetfunc(){
      firstCard = ''
@@ -126,13 +127,3 @@ function resetfunc(){
       foundButton.textContent = `Found: ${matchedCards}`
 }
 
-//found cards count
-
-// found.addEventListener('click', function(){
-    
-//     matchedCards.textContent = `Found: ${matchedCards}`
-// })
-
-
-
-/*-------------------------------- Functions --------------------------------*/
