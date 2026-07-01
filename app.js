@@ -15,6 +15,7 @@ const attemptsButton = document.querySelector('#attempts')
 const message = document.querySelector('#message')
 const reset = document.querySelector('#reset')
 const foundButton = document.querySelector('#found')
+const gameOveraudio = new Audio('assets/audio/gameover.mp3')
 /*----------------------------- Event Listeners -----------------------------*/
 //mix cards
 emojisMix.sort(() => Math.random() - 0.5);
@@ -83,8 +84,9 @@ cardBoard.addEventListener('click', function(event){
             setTimeout(() => {
             resetfunc()
         }, 3000)
+        gameOveraudio.play()
         } 
-    
+        
     }
 
      }
