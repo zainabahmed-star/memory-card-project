@@ -16,6 +16,7 @@ const message = document.querySelector('#message')
 const reset = document.querySelector('#reset')
 const foundButton = document.querySelector('#found')
 const gameOveraudio = new Audio('assets/audio/gameover.mp3')
+const foundAudio = new Audio('assets/audio/foundsound.wav')
 /*----------------------------- Event Listeners -----------------------------*/
 //mix cards
 emojisMix.sort(() => Math.random() - 0.5);
@@ -51,7 +52,11 @@ cardBoard.addEventListener('click', function(event){
         firstCard = ''
         secCard = '' 
         
-        matchedCards += 1
+        if (matchedCards += 1){
+            foundAudio.play()
+        }
+        // matchedCards += 1
+        
         if (matchedCards === 6){
             message.textContent = 'You Won'
         }
@@ -70,7 +75,7 @@ cardBoard.addEventListener('click', function(event){
         //reset to empty to restart
         firstCard = ''
         secCard = '' 
-        }, 1000)
+        }, 500)
         
         // attempts descrase by 1 each time cards dont match
         attempts -= 1
