@@ -24,7 +24,7 @@ _yes_
 No installation required! just clone the repo to your machine and open the `index.html` file in your browser.
 ```bash
 git clone
-cd memory
+cd memory-card-project
 open index.html
 ```
 

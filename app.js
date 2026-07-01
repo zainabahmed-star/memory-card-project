@@ -89,20 +89,16 @@ cardBoard.addEventListener('click', function(event){
             
         // })
         if (attempts === 0){
-            message.textContent = `Game Over`
-            showMsg.style.visibility= 'visible';
             setTimeout(() => {
             resetfunc()
-        }, 3000)
+        }, 4000)
         gameOveraudio.play()
+        message.textContent = `Game Over`
+        showMsg.style.visibility= 'visible';
         } 
-        
     }
-
      }
-   
     }
-
 })
 //reset the whole game 
     reset.addEventListener('click', resetfunc)
@@ -127,5 +123,6 @@ function resetfunc(){
       attemptsButton.textContent = `Attempts: ${attempts}`
       emojisMix.sort(() => Math.random() - 0.5);
       foundButton.textContent = `Found: ${matchedCards}`
+      showMsg.style.visibility = 'hidden'
 }
 

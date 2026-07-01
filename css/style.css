@@ -66,15 +66,13 @@ h1{
 
 .msg {
     justify-content: center;
-    display: flex;
     text-align: center;
     align-items: center;
-    background-color: #8fd9fb11;
     padding: 40px;
     border-radius: 5px;
     position: fixed;
     background-color: #d5f1feb5;
-    visibility: hidden;
     border: 2px solid #033B55;
+    visibility: hidden;
 }
 
