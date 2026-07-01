@@ -18,6 +18,7 @@ const foundButton = document.querySelector('#found')
 const gameOveraudio = new Audio('assets/audio/gameover.mp3')
 const foundAudio = new Audio('assets/audio/foundsound.wav')
 const winAudio = new Audio('assets/audio/win.wav')
+const showMsg = document.querySelector('.msg')
 /*----------------------------- Event Listeners -----------------------------*/
 //mix cards
 emojisMix.sort(() => Math.random() - 0.5);
@@ -61,6 +62,7 @@ cardBoard.addEventListener('click', function(event){
         if (matchedCards === 6){
             message.textContent = 'You Won'
             winAudio.play()
+            showMsg.style.visibility= 'visible';
         }
         foundButton.textContent = `Found: ${matchedCards}`
         
@@ -88,6 +90,7 @@ cardBoard.addEventListener('click', function(event){
         // })
         if (attempts === 0){
             message.textContent = `Game Over`
+            showMsg.style.visibility= 'visible';
             setTimeout(() => {
             resetfunc()
         }, 3000)
@@ -103,17 +106,7 @@ cardBoard.addEventListener('click', function(event){
 })
 //reset the whole game 
     reset.addEventListener('click', resetfunc)
-    //   firstCard = ''
-    //   secCard = ''
-    //   matchedCards = 0
-    //   attempts = 10
-    //   carD.forEach(card => {
-    //     card.textContent =''
-    //   })
-    //   message.textContent = ''
-    //   attemptsButton.textContent = `Attempts: ${attempts}`
-    //   emojisMix.sort(() => Math.random() - 0.5);
-    //   foundButton.textContent = `Found: ${matchedCards}`
+
 
 
 

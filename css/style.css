@@ -11,7 +11,7 @@ body {
 }
 
 h1{
-    color:  #033B55
+    color:  #033B55;
     
 }
 
@@ -59,7 +59,22 @@ h1{
 }
 
 #message {
-    color:  rgb(125, 41, 41);
-    margin-top: 30px;
-    font-size: 27px;
+    color:  #033B55;
+    /* margin-top: 30px;
+    font-size: 27px; */
 }
+
+.msg {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #8fd9fb11;
+    padding: 40px;
+    border-radius: 5px;
+    position: fixed;
+    background-color: #d5f1feb5;
+    visibility: hidden;
+    border: 2px solid #033B55;
+}
+
