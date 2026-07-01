@@ -6,12 +6,12 @@ body {
     justify-content: center;
     min-height: 100vh;
     align-items: center;
-    background-color: rgb(25, 25, 24);
+    background-color: #D3F0FD;
     font-family: "Righteous", sans-serif;
 }
 
 h1{
-    color: rgb(244, 240, 235);
+    color:  #033B55
     
 }
 
@@ -20,37 +20,46 @@ h1{
     flex-wrap:  wrap;
     width: 325px;
     gap: 10px;
-   
-}
-
-.card {
-    width: 30%;
-    aspect-ratio: 1/1;
-    border: 2px solid rgb(244, 240, 235);
-    border-radius: 10px;
-    text-align: center;
-    background-color: rgb(244, 240, 235);
-    cursor: pointer;
     
 }
 
+.card {
+    display: flex;
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: #8FD9FB;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #8FD9FB;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 35px;
+}
+
+/* .card:hover{
+    background-color: aqua;
+} */
+
 .buttons {
     display: flex;
-    gap: 55px;
+    gap: 45px;
     margin-top: 30px;
-    border: 2px solid rgb(244, 240, 235);
+    /* border: 2px solid rgb(244, 240, 235); */
     border-radius: 10px;
     
 }
 
 .btn {
     font-family: "Righteous", sans-serif;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    background-color: #8FD9FB;
+    border: none;
+    font-size: 15px;
 }
 
 #message {
-    color: rgb(244, 240, 235);
+    color:  rgb(125, 41, 41);
     margin-top: 30px;
-    
+    font-size: 27px;
 }
