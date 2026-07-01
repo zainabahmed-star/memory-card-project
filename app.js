@@ -17,6 +17,7 @@ const reset = document.querySelector('#reset')
 const foundButton = document.querySelector('#found')
 const gameOveraudio = new Audio('assets/audio/gameover.mp3')
 const foundAudio = new Audio('assets/audio/foundsound.wav')
+const winAudio = new Audio('assets/audio/win.wav')
 /*----------------------------- Event Listeners -----------------------------*/
 //mix cards
 emojisMix.sort(() => Math.random() - 0.5);
@@ -59,6 +60,7 @@ cardBoard.addEventListener('click', function(event){
         
         if (matchedCards === 6){
             message.textContent = 'You Won'
+            winAudio.play()
         }
         foundButton.textContent = `Found: ${matchedCards}`
         
