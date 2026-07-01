@@ -1,8 +1,6 @@
 # Memory Match Game
 
-a simple memory card game
-
-_yes_
+a simple memory card game built using html, css, and javascript.
 
 ![Screenshot of the game](/assets/audio/memorygame.png)
 
@@ -17,8 +15,8 @@ _yes_
 - memorize their places if they dont match
 - click again to find two matching pairs
 - the rest button is to restart the game
-- the attempts are 10 and player will lose
-- found button is to keep track of how many cards the player found 
+- the game is over when the attempts reach 0
+- found button is to keep track of how many pairs the player found 
 
 #### Installation
 No installation required! just clone the repo to your machine and open the `index.html` file in your browser.
